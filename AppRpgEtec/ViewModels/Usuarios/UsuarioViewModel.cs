@@ -1,5 +1,6 @@
 ﻿using AppRpgEtec.Models;
 using AppRpgEtec.Services.Usuarios;
+using AppRpgEtec.Views.Usuarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace AppRpgEtec.ViewModels.Usuarios
         private UsuarioService uService;
         public ICommand RegistrarCommand { get; set; }
         public ICommand AutenticarCommand { get; set; }
-
+        public ICommand DirecionarCadastroCommand { get; set; }
 
         //ctor + TAB + TAB: atalho para criar o construtor
         public UsuarioViewModel()
@@ -23,10 +24,25 @@ namespace AppRpgEtec.ViewModels.Usuarios
             InicializarCommands();
         }
 
+        public async Task DirecionarParaCadastro()//metodo para exibição da view do Cadastro
+        {
+            try
+            {
+                await Application.Current.MainPage
+                    .Navigation.PushAsync(new CadastroView());
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + "Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
         public void InicializarCommands()
         {
             RegistrarCommand = new Command(async () => await RegistrarUsuario());
             AutenticarCommand = new Command(async () => await AutenticarUsuario());
+            DirecionarCadastroCommand = new Command(async () => await DirecionarParaCadastro());
         }
 
         #region AttributosPropiedades
