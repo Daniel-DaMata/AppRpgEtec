@@ -24,6 +24,7 @@ namespace AppRpgEtec.ViewModels.Usuarios
             InicializarCommands();
         }
 
+
         public async Task DirecionarParaCadastro()//metodo para exibição da view do Cadastro
         {
             try
@@ -117,7 +118,7 @@ namespace AppRpgEtec.ViewModels.Usuarios
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
 
-                    Application.Current.MainPage = new MainPage();
+                    Application.Current.MainPage = new AppShell();
                 }
                 else
                 {
