@@ -10,8 +10,8 @@ namespace AppRpgEtec.Services.Usuarios
     internal class UsuarioService : Request
     {
         private readonly Request _request;
-        private const string apiUrlBase = "https://bsite.net/luizfernando987/Usuarios";
-        //private const string apiUrlBase = "http://Daniel-DaMata.somee.com/RpgApi/Usuarios";
+        //private const string apiUrlBase = "https://bsite.net/luizfernando987/Usuarios";
+        private const string apiUrlBase = "http://Daniel-DaMata.somee.com/RpgApi/Usuarios";
 
         //método construtor
         public UsuarioService()

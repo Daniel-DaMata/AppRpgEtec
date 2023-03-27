@@ -1,9 +1,11 @@
-﻿using AppRpgEtec.Models;
+﻿using AppRpgEtec.Helpers.Message;
+using AppRpgEtec.Models;
 using AppRpgEtec.Services.Usuarios;
 using AppRpgEtec.Views.Usuarios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -114,6 +116,19 @@ namespace AppRpgEtec.ViewModels.Usuarios
                     Preferences.Set("UsuarioUsername", uAutenticado.Username);
                     Preferences.Set("UsuarioPerfil", uAutenticado.Perfil);
                     Preferences.Set("UsuarioToken", uAutenticado.Token);
+
+                    Models.Email email = new Models.Email();
+                    email.Remetente = "daniel.soares.damata@gmail.com";
+                    email.RemetentePassword = "ndabmpjkwujdzqfn";
+                    email.Destinatario = "luizfernando987@gmail.com";
+                    email.DominioPrimario = "smtp.gmail.com";
+                    email.PortaPrimaria = 587;
+                    email.Assunto = "Notificação de acesso";
+                    email.Mensagem = $"Usuário {u.Username} acessou o aplicativo" + 
+                        $"em {DateTime.Now:dd/MM/yyyy HH:mm:ss}";
+
+                    EmailHelpers emailHelpers= new EmailHelpers();
+                    await emailHelpers.EviarEmail(email);
 
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
