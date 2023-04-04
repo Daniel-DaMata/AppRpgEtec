@@ -33,6 +33,7 @@ declare-styleable;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp
 declare-styleable;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\156\jl\res\values\attr.xml
 external-cache-path;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\157\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 external-cache-path;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\79\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-files-path;obj\Debug\net7.0-android\res\resources\xml\file_paths.xml
 external-path;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\157\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 external-path;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\79\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\net7.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
@@ -49,6 +50,7 @@ layer-list;obj\Debug\net7.0-android\resizetizer\sp\drawable-v31\maui_splash_imag
 microsoft.maui.controls.platform.compatibility.ShellFlyoutLayout;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\153\jl\res\layout\flyoutcontent.xml
 paths;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\157\jl\res\xml\microsoft_maui_essentials_fileprovider_file_paths.xml
 paths;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\79\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+paths;obj\Debug\net7.0-android\res\resources\xml\file_paths.xml
 resources;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\153\jl\res\values\strings.xml
 resources;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\154\jl\res\values\attrs.xml
 resources;D:\Daniel\VS\AppRpgEtec\AppRpgEtec\obj\Debug\net7.0-android\lp\154\jl\res\values\styles.xml

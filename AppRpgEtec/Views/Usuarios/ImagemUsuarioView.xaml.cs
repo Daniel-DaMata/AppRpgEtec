@@ -5,6 +5,7 @@ namespace AppRpgEtec.Views.Usuarios;
 public partial class ImagemUsuarioView : ContentPage
 {
     ImagemUsuarioViewModel viewModel;
+
     public ImagemUsuarioView()
     {
         InitializeComponent();

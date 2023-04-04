@@ -358,6 +358,8 @@ D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-windows10.0.19041.0\win10-x6
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Plugin.Media.dll
+D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Xamarin.Essentials.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.CSharp.dll

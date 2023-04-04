@@ -1,6 +1,8 @@
 ﻿using AppRpgEtec.Models;
 using AppRpgEtec.Services.Usuarios;
+using AppRpgEtec.Views.Usuarios;
 using Plugin.Media;
+//using Plugin.Media;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,11 +24,29 @@ namespace AppRpgEtec.ViewModels.Usuarios
             AbrirGaleriaCommand = new Command(AbrirGaleria);
             SalvarImagemCommand = new Command(SalvarImagem);
             FotografarCommand = new Command(Fotografar);
+
+            CarregarUsuario();
         }
 
         public ICommand AbrirGaleriaCommand { get; set; }
         public ICommand SalvarImagemCommand { get; set; }
         public ICommand FotografarCommand { get; set; }
+
+        public async void CarregarUsuario()
+        {
+            try
+            {
+                int usuarioId = Preferences.Get("UsuarioId", 0);
+                Usuario u = await uService.GetUsuarioAsync(usuarioId);
+
+                Foto = u.Foto;
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
 
         public async void AbrirGaleria()
         {
@@ -95,7 +115,7 @@ namespace AppRpgEtec.ViewModels.Usuarios
                     await Task.FromResult(false);
                 }
 
-                string fileName = String.Format("{0:ddMMyyy_HHmmss", DateTime.Now) + ".jpg";
+                string fileName = String.Format("{0:ddMMyyy_HHmmss}", DateTime.Now) + ".jpg";
 
                 var file = await CrossMedia.Current.TakePhotoAsync
                 (new Plugin.Media.Abstractions.StoreCameraMediaOptions

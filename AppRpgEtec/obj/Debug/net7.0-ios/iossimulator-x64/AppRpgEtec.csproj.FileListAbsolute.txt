@@ -282,6 +282,8 @@ D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-ios\iossimulator-x64\Microso
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Extensions.Primitives.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.Maui.Graphics.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-ios\iossimulator-x64\Newtonsoft.Json.dll
+D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-ios\iossimulator-x64\Plugin.Media.dll
+D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-ios\iossimulator-x64\Xamarin.Essentials.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.CSharp.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.VisualBasic.Core.dll
 D:\Daniel\VS\AppRpgEtec\AppRpgEtec\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.VisualBasic.dll

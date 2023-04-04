@@ -26,6 +26,7 @@ namespace AppRpgEtec.Services.Usuarios
 
         public UsuarioService()
         {
+            _request = new Request();
         }
 
         //metodo consulta de usuario(Get)

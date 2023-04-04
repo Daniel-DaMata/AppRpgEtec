@@ -58,6 +58,11 @@
 	  <None Remove="Resources\Images\menudisputas.svg" />
 	  <None Remove="Resources\Images\menupersonagens.svg" />
 	  <None Remove="Resources\Images\menuusuarios.svg" />
+	  <None Remove="Resources\xml\file_paths.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <AndroidResource Include="Resources\xml\file_paths.xml" />
 	</ItemGroup>
 
 	<ItemGroup>

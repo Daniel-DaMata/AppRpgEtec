@@ -127,8 +127,8 @@ namespace AppRpgEtec.ViewModels.Usuarios
                     email.Mensagem = $"Usuário {u.Username} acessou o aplicativo" + 
                         $"em {DateTime.Now:dd/MM/yyyy HH:mm:ss}";
 
-                    EmailHelpers emailHelpers= new EmailHelpers();
-                    await emailHelpers.EviarEmail(email);
+                  //  EmailHelpers emailHelpers= new EmailHelpers();
+                  //  await emailHelpers.EviarEmail(email);
 
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
